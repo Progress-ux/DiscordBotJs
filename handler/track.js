@@ -5,6 +5,7 @@ class Track {
       this.duration = 0;
       this.url = "";
       this.stream_url = "";
+      this.thumbnail = "";
       this.BEGIN_URL = "https://youtu.be/";
    }
 
