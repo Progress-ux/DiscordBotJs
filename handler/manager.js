@@ -1,0 +1,11 @@
+const musicHandlers = new Map();
+const MusicHandler = require("./music-handler");
+
+function getMusicHandler(guild_id) {
+   if(!musicHandlers.has(guild_id)) {
+      musicHandlers.set(guild_id, new MusicHandler());
+   }
+   return musicHandlers.get(guild_id);
+}
+
+module.exports = { getMusicHandler };
